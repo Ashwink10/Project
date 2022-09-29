@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Table</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid #55555555;
+        border-collapse: collapse;
+        font-style: oblique;
+        font-size: 20px;
+        color: #555;
+        width: 800px;
+        height: 100px;
+        margin-left: 300%;
+        margin-top: 10px;
+        text-align: center;
+      }
+      body {
+        /* background: url('https://images.unsplash.com/photo-1618022325802-7e5e732d97a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=60'); */
+        background-size: cover;
+        box-sizing: border-box;
+        background-color: hsl(220, 33%, 96%);
+      }
+
+      th {
+        font-size: 20px;
+        font-style: unset;
+        background-color: #4caf50;
+        color: #fff;
+      }
+
+      .container {
+        /* text-align: center; */
+        width: 100px;
+        height: 4px;
+        margin-top: 80px;
+      }
+      .search {
+        margin-left: 450px;
+        width: 400px;
+        /* margin-bottom: 20px; */
+        background-color: #ffffff;
+        color: black;
+        text-align: center;
+        height: 30px;
+        border-radius: 10px;
+        padding: 11px 10px;
+        margin-right: 4px;
+        font-size: medium;
+      }
+      h1 {
+        color: #555;
+        font-weight: bold;
+        /* margin-left: 200px; */
+        text-align: center;
+      }
+      h3 {
+        color: #555;
+        font-weight: bold;
+        margin-left: 350px;
+      }
+      span {
+        color: red;
+      }
+      .btn {
+        text-align: right;
+        /* margin-left:800px ; */
+        /* margin-top: 3px; */
+        margin-right: 100px;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 13px 35px;
+        color: black;
+        border-radius: 40px;
+        /* display: flex; */
+        white-space: nowrap;
+        border: none;
+        /* top: 40%; */
+        background: #555;
+        color: #fff;
+        /* transition: all 0.3s ease; */
+      }
+      /* .icon i{
+            margin-left: 300px;
+        } */
+    </style>
+  </head>
+
+  <body>
+    <h1>ADA's PRODUCT</h1>
+    <h3 class="my-profession">Desinged by <span class="typing"></span></h3>
+    <div class="icon">
+      <!-- <i class="fa fa-search fa-lg" aria-hidden="true"></i> -->
+      <input
+        type="text"
+        name=""
+        id="myInput"
+        class="search"
+        placeholder="search products"
+        onkeyup="myFunction()"
+      />
+      <button class="btn">Search</button>
+    </div>
+
+    <main class="container">
+      <!-- <i class="fa-light fa-magnifying-glass"></i> -->
+      <table>
+        <tr>
+          <th>PRICEZZ</th>
+          <th>PRODUCT</th>
+          <th>IMAGE</th>
+        </tr>
+        <tr>
+          <td>$400</td>
+          <td>Shirt</td>
+          <td>
+            <img
+              src="https://5.imimg.com/data5/YJ/BO/MY-10973479/mens-designer-casual-shirt-500x500.jpg"
+              width="90px"
+              height="80px"
+              alt=""
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>$500</td>
+          <td>Mobile</td>
+          <td>
+            <img
+              src="https://i.gadgets360cdn.com/products/large/moto-g52-db-709x800-1649827920.jpg"
+              width="90px"
+              height="80px"
+              alt=""
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>$600</td>
+          <td>Pant</td>
+          <td>
+            <img
+              src="https://m.media-amazon.com/images/I/61WIS7hjQ8S._UX569_.jpg"
+              width="90px"
+              height="80px"
+              alt=""
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>$700</td>
+          <td>Watch</td>
+          <td>
+            <img
+              src="https://staticimg.titan.co.in/Titan/Catalog/90146SL01_1.jpg?impolicy=pqlow&imwidth=640"
+              width="90px"
+              height="80px"
+              alt=""
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>$800</td>
+          <td>Shoes</td>
+          <td>
+            <img
+              src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/10331501/2020/3/18/d4d07c60-88d9-43d9-aa78-9cc7712816321584508934272-US-Polo-Assn-Men-White-Colourblocked-Sneakers-84015845089331-1.jpg"
+              width="90px"
+              height="80px"
+              alt=""
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>$900</td>
+          <td>Bag</td>
+          <td>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUyPj2L-bL6xUecxQyC2FWhW8fwQXk0p58jQ&usqp=CAU"
+              width="90px"
+              height="80px"
+              alt=""
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>$500</td>
+          <td>Jeans</td>
+          <td>
+            <img
+              src="https://media.istockphoto.com/photos/beautiful-light-blue-jeans-on-a-white-background-online-shopping-top-picture-id1227067143?k=20&m=1227067143&s=170667a&w=0&h=oZaEHGsIU742UM-6pHT34M0YU4yAht4WNUL1pOuTtAM="
+              width="90px"
+              height="80px"
+            />
+          </td>
+        </tr>
+      </table>
+    </main>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="hello.js"></script>
+    <script src="hello1.js"></script>
+  </body>
+</html>
